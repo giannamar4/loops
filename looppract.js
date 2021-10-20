@@ -1,36 +1,40 @@
-/*/loop 1
+//loop 1 - sum of every # 1 - 1000
 let number = 1000, i = 1, sum = 0
 while (i <= number){
 sum += i;
 i++
 }
 console.log(sum)
-loop 2
+//loop 2 - sum of every odd #from 93 to 845
 let oddsum = 0
-for(j = 93; j <= 845; j++){
+for(let j = 93; j <= 845; j++){
     if(j%2 == 1){
-        oddsum += j
-    }
+        oddsum += j }
 }
 console.log(oddsum)
 
-loop 4/*/
-  num = prompt('pick a Number.')
-    for (i = 2; i <= num; ++i) {
-      if (num % i == 0) {
-         let prime = true; 
-        break;
-      }
-      if (num % i != 0){
-          let prime = false;
-          break;
-      }
-    }
+//loop 3 - product of every # that is divisible by 6 from 1 - 400 
+let product = 1
+for(let s = 1; s <= 400; s+=6){
+       product *= s
+}
+console.log(product)
+//loop 4 - determine if an input is prime or not
 
-    if (prime = true){
-      console.log(`${num} is a prime number`);
-    }
-    else{
-      console.log(`${num} is not a prime number`);
-    }
+//loop 5 - every prime number 1 - 100
+function isPrime(p) {
+    for(let a = 2; a < p; a++){}
+}
+//loop 6 - find the factorial of a number
 
+//loop 7 - find the greatest common factor of any two input numbers
+
+//loop 8 - create a loop that will create a diamond of size x
+
+//loop 9 - create a loop that will create a triangle of size x
+
+//loop 10 - calculate  series
+
+//loop 11 - fill out the Fibonacci series
+
+//loop 12 - create a square made of numbers
