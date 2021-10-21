@@ -20,11 +20,36 @@ for(let s = 1; s <= 400; s+=6){
 }
 console.log(product)
 //loop 4 - determine if an input is prime or not
-
-//loop 5 - every prime number 1 - 100
-function isPrime(p) {
-    for(let a = 2; a < p; a++){}
+let primey = true
+let input = parseInt(prompt('input a number'))
+ if(input===2){
+    console.log('2 is prime')
 }
+else{
+    for(let a = 2; a < input; a++){
+        if (input % a == 0){
+            primey = false;
+            break;
+        }
+    }
+if(primey == true){
+    console.log(input + ' is prime');
+} else{
+    console.log(input + ' is not prime')
+}
+}
+//loop 5 - every prime number 1 - 100
+let d = 10;
+let primenum = ''
+prime1:
+for(let c = 2; c <= d; c++ ){
+    for(let e = 2; e < c; e++){
+        if(c%e == 0) continue prime1;
+primenum = primenum + e
+    }
+}
+console.log(primenum)
+
 //loop 6 - find the factorial of a number
 
 //loop 7 - find the greatest common factor of any two input numbers
