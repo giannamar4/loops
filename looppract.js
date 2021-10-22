@@ -20,35 +20,18 @@ for(let s = 1; s <= 400; s+=6){
 }
 console.log(product)
 //loop 4 - determine if an input is prime or not
-let primey = true
-let input = parseInt(prompt('input a number'))
- if(input===2){
-    console.log('2 is prime')
-}
-else{
-    for(let a = 2; a < input; a++){
-        if (input % a == 0){
-            primey = false;
-            break;
-        }
+function isPrime(primey){
+    for(let a=2;i<primey;p++){
+        if primey % p ==0){
+            return false;
     }
-if(primey == true){
-    console.log(input + ' is prime');
-} else{
-    console.log(input + ' is not prime')
+       else {return true
 }
 }
+isPrime(7)
 //loop 5 - every prime number 1 - 100
-let d = 10;
-let primenum = ''
-prime1:
-for(let c = 2; c <= d; c++ ){
-    for(let e = 2; e < c; e++){
-        if(c%e == 0) continue prime1;
-primenum = primenum + e
-    }
-}
-console.log(primenum)
+isPrime()
+
 
 //loop 6 - find the factorial of a number
 
