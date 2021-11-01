@@ -21,22 +21,53 @@ for(let s = 1; s <= 400; s+=6){
 console.log(product)
 //loop 4 - determine if an input is prime or not
 function isPrime(primey){
-    for(let a=2;i<primey;p++){
-        if primey % p ==0){
+    for(let p=0;p<primey;p++){
+        if (primey % p ==0){
             return false;
     }
        else {return true
 }
-}
-isPrime(7)
+}}
+console.log(isPrime(7))
+
 //loop 5 - every prime number 1 - 100
-isPrime()
-
-
+for(let a=1;a<=100;a++){
+    let temp = 0;
+    for(let b = 2;b<a;b++){
+        if(a % b ==0){
+            temp = 1;
+            break;
+        }
+    }
+    if(a>1 && temp == 0){
+      console.log(a)
+    }
+    }
 //loop 6 - find the factorial of a number
-
+function factorial(input){
+    fact = 1
+    for(let c =input;c>=1;c--){
+      fact = fact * c
+    
+    }
+    console.log(fact)
+  }
+  factorial(5)
 //loop 7 - find the greatest common factor of any two input numbers
-
+function gcf(no1,no2){
+    let cFact = 1
+    if(no1 > no2){
+       cFact = no2
+    }
+    else{
+      cFact = no1
+    }
+  while(no1 % cFact !=0||no2 % cFact != 0){
+    cFact--
+  }
+  console.log(cFact)
+  }
+  gcf(18,24)
 //loop 8 - create a loop that will create a diamond of size x
 
 //loop 9 - create a loop that will create a triangle of size x
